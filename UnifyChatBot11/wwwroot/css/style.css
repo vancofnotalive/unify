@@ -1,0 +1,1182 @@
+﻿* {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+body {
+    overflow: hidden;
+}
+    *::-webkit-scrollbar {
+        
+    }
+@keyframes historyPopUp {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+img {
+    width: 100%;
+    flex-shrink: 0 !important;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none !important;
+}
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.pc {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.signUpForm {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.gs-5 {
+    height: 5vh;
+    width: 100%;
+}
+
+.bg-img img {
+    width: 50%;
+}
+
+
+.form {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+.signup-form {
+    height: 100%;
+    width: 100%;
+    scale: 0.8;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    border: 0.1vh solid transparent;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+    .signup-form h1 {
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.row-signup {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh !important;
+}
+
+    .input-box strong {
+        font-weight: 600;
+    }
+
+    .input-box input {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 3vh;
+        border: 0;
+        border-bottom: 0.1vh solid black;
+    }
+
+.row-signup:last-child input {
+    width: 100%;
+}
+
+.mid {
+    position: absolute;
+    right: 50%;
+    translate: 50% 0;
+}
+
+.input {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-bottom: 3vh !important;
+}
+
+    .input strong {
+        font-size: 1.7vw;
+        font-weight: 600;
+    }
+
+    .input input {
+        position: absolute;
+        bottom: 0%;
+        height: 3vh;
+        width: 100%;
+        border: 0;
+        border-bottom: 0.1vh solid black;
+    }
+
+.how-you-heard {
+    position: relative;
+    border-bottom: 0.1vh solid black;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2vh !important;
+    justify-content: space-between;
+}
+
+    .how-you-heard i {
+        padding: 0 1vw !important;
+        cursor: pointer;
+    }
+
+.heading-signup {
+    position: relative;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .heading-signup img {
+        width: 8%;
+    }
+
+    .heading-signup h1 {
+        padding: 0vw 2vw !important;
+    }
+
+.how-you-heard strong {
+}
+
+.nb-dropdown-menu {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    bottom: 100%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    .nb-dropdown-menu input:hover {
+        background-color: aliceblue;
+        cursor: pointer;
+    }
+
+select {
+    height: 5vh;
+    border: none;
+    border-bottom: 0.1vh solid black;
+}
+
+    select:focus {
+        border-radius: 0;
+        outline: none;
+    }
+
+    select option {
+        font-size: 1vw;
+    }
+
+.safe {
+    font-size: 1vw;
+    font-weight: 400;
+    width: 80%;
+}
+
+.action-links {
+    height: fit-content;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .action-links button {
+        background-color: rgb(2, 99, 184);
+        padding: 1vh 8vw !important; /* Adjusted padding to refine the button size */
+        border: none; /* Removed border for a cleaner look */
+        border-radius: 2vw; /* Rounded corners */
+        color: white;
+        text-decoration: none; /* Removes underline from links */
+        font-size: 1.2vw; /* Increases text size for better readability */
+        font-weight: bold; /* Makes the text bold */
+        display: inline-block; /* Ensures proper spacing between buttons */
+        text-align: center; /* Centers text within the buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+        margin: 0.5vh 1vw; /* Adds spacing between the buttons */
+    }
+    .action-links a {
+        background-color: rgb(2, 99, 184);
+        padding: 1vh 8vw !important; /* Adjusted padding to refine the button size */
+        border: none; /* Removed border for a cleaner look */
+        border-radius: 2vw; /* Rounded corners */
+        color: white;
+        text-decoration: none; /* Removes underline from links */
+        font-size: 1.2vw; /* Increases text size for better readability */
+        font-weight: bold; /* Makes the text bold */
+        display: inline-block; /* Ensures proper spacing between buttons */
+        text-align: center; /* Centers text within the buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+        margin: 0.5vh 1vw; /* Adds spacing between the buttons */
+    }
+
+        .action-links button:hover {
+            background-color: rgb(22, 131, 225); /* Darker blue on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        .action-links button:active {
+            background-color: rgb(20, 117, 201); /* Even darker blue when active */
+            transform: translateY(1px); /* Slight sink on active */
+        }
+
+        .action-links button:last-child {
+            background-color: rgb(19, 19, 19);
+        }
+
+.error {
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    color: red;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .error h6 {
+        font-size: 3vh;
+        animation: showUp 0.1s ease-out;
+    }
+
+@keyframes showUp {
+    0% {
+        translate: 0 -100%;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    main {
+    }
+
+    .input-box strong {
+        padding-right: 5vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .input-box input {
+        width: 100% !important;
+    }
+
+    .dob strong {
+        padding-right: 10vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+        font-weight: 400;
+    }
+
+    .nb-dropdown-menu input {
+        font-size: 1.2vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1.5vw;
+    }
+}
+
+/* Styles for small to medium desktops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    main {
+        background-color: white;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1.5vw !important;
+        padding-right: 7vw !important;
+    }
+
+    .input strong {
+        font-size: 1.5vw !important;
+    }
+
+    .dob strong {
+        padding-right: 12vw !important;
+        font-size: 1.5vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+
+/* Styles for large desktops (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+    main {
+        background-color: white;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 0.9vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1vw;
+    }
+
+    .date-of-birth {
+        font-size: 0.9vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+        padding-right: 10vw !important;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .safe {
+        font-size: 0.8vw;
+    }
+}
+
+/* Styles for ultra-wide desktops (min-width: 1920px) */
+@media screen and (min-width: 1920px) {
+    main {
+        background-color: white;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 1vw;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+
+/* Styles for large 4K monitors (min-width: 2560px) */
+@media screen and (min-width: 2560px) {
+}
+
+/* Styles for 5K and ultra-wide monitors (min-width: 3840px) */
+@media screen and (min-width: 3840px) {
+}
+
+div {
+    display: none;
+}
+
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+    *::-webkit-scrollbar {
+    }
+
+img {
+    width: 100%;
+    flex-shrink: 0 !important;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.pc {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.signUpForm {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.gs-5 {
+    height: 5vh;
+    width: 100%;
+}
+
+.bg-img img {
+    width: 50%;
+}
+
+
+.form {
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+.signup-form {
+    height: 100%;
+    width: 100%;
+    scale: 0.8;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+    border: 0.1vh solid transparent;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+    .signup-form h1 {
+        align-self: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.row-signup {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    align-self: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh !important;
+}
+
+    .input-box strong {
+        font-weight: 600;
+    }
+
+    .input-box input {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 3vh;
+        border: 0;
+        border-bottom: 0.1vh solid black;
+    }
+
+.row-signup:last-child input {
+    width: 100%;
+}
+
+.mid {
+    position: absolute;
+    right: 50%;
+    translate: 50% 0;
+}
+
+.input {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-bottom: 3vh !important;
+}
+
+    .input strong {
+        font-size: 1.7vw;
+        font-weight: 600;
+    }
+
+    .input input {
+        position: absolute;
+        bottom: 0%;
+        height: 3vh;
+        width: 100%;
+        border: 0;
+        border-bottom: 0.1vh solid black;
+    }
+
+.how-you-heard {
+    position: relative;
+    border-bottom: 0.1vh solid black;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2vh !important;
+    justify-content: space-between;
+}
+
+    .how-you-heard i {
+        padding: 0 1vw !important;
+        cursor: pointer;
+    }
+
+.heading-signup {
+    position: relative;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .heading-signup img {
+        width: 8%;
+    }
+
+    .heading-signup h1 {
+        padding: 0vw 2vw !important;
+    }
+
+.how-you-heard strong {
+}
+
+.nb-dropdown-menu {
+    position: absolute;
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    bottom: 100%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+    .nb-dropdown-menu input:hover {
+        background-color: aliceblue;
+        cursor: pointer;
+    }
+
+select {
+    height: 5vh;
+    border: none;
+    border-bottom: 0.1vh solid black;
+}
+
+    select:focus {
+        border-radius: 0;
+        outline: none;
+    }
+
+    select option {
+        font-size: 1vw;
+    }
+
+.safe {
+    font-size: 1vw;
+    font-weight: 400;
+    width: 80%;
+}
+
+.action-links {
+    height: fit-content;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .action-links button {
+        background-color: rgb(2, 99, 184);
+        padding: 1vh 8vw !important; /* Adjusted padding to refine the button size */
+        border: none; /* Removed border for a cleaner look */
+        border-radius: 2vw; /* Rounded corners */
+        color: white;
+        text-decoration: none; /* Removes underline from links */
+        font-size: 1.2vw; /* Increases text size for better readability */
+        font-weight: bold; /* Makes the text bold */
+        display: inline-block; /* Ensures proper spacing between buttons */
+        text-align: center; /* Centers text within the buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+        margin: 0.5vh 1vw; /* Adds spacing between the buttons */
+    }
+
+    .action-links a {
+        background-color: rgb(2, 99, 184);
+        padding: 1vh 8vw !important; /* Adjusted padding to refine the button size */
+        border: none; /* Removed border for a cleaner look */
+        border-radius: 2vw; /* Rounded corners */
+        color: white;
+        text-decoration: none; /* Removes underline from links */
+        font-size: 1.2vw; /* Increases text size for better readability */
+        font-weight: bold; /* Makes the text bold */
+        display: inline-block; /* Ensures proper spacing between buttons */
+        text-align: center; /* Centers text within the buttons */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+        margin: 0.5vh 1vw; /* Adds spacing between the buttons */
+    }
+
+    .action-links button:hover {
+        background-color: rgb(22, 131, 225); /* Darker blue on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
+    }
+
+    .action-links button:active {
+        background-color: rgb(20, 117, 201); /* Even darker blue when active */
+        transform: translateY(1px); /* Slight sink on active */
+    }
+
+    .action-links button:last-child {
+        background-color: rgb(19, 19, 19);
+    }
+
+.error {
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    color: red;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .error h6 {
+        font-size: 3vh;
+        animation: showUp 0.1s ease-out;
+    }
+
+@keyframes showUp {
+    0% {
+        translate: 0 -100%;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    main {
+    }
+
+    .input-box strong {
+        padding-right: 5vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .input-box input {
+        width: 100% !important;
+    }
+
+    .dob strong {
+        padding-right: 10vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+        font-weight: 400;
+    }
+
+    .nb-dropdown-menu input {
+        font-size: 1.2vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1.5vw;
+    }
+}
+
+/* Styles for small to medium desktops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    main {
+        background-color: white;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1.5vw !important;
+        padding-right: 7vw !important;
+    }
+
+    .input strong {
+        font-size: 1.5vw !important;
+    }
+
+    .dob strong {
+        padding-right: 12vw !important;
+        font-size: 1.5vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+
+/* Styles for large desktops (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+    main {
+        background-color: white;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 0.9vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1vw;
+    }
+
+    .date-of-birth {
+        font-size: 0.9vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+        padding-right: 10vw !important;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .safe {
+        font-size: 0.8vw;
+    }
+}
+
+/* Styles for ultra-wide desktops (min-width: 1920px) */
+@media screen and (min-width: 1920px) {
+    main {
+        background-color: white;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 1vw;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+
+/* Styles for large 4K monitors (min-width: 2560px) */
+@media screen and (min-width: 2560px) {
+}
+
+/* Styles for 5K and ultra-wide monitors (min-width: 3840px) */
+@media screen and (min-width: 3840px) {
+}
+
+div {
+    display: none;
+}
+/* 
+.index {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 20vw;
+    background-color: green;
+}
+
+.main-window {
+    height: 100vh;
+    width: 80vw;
+    background-color: blue;
+}
+
+.chat {
+    height: 90%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.send-box {
+    height: 10%;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.send-style-box {
+    height: 30%;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+.send-message {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+
+.send-message-input {
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .send-message-input input {
+        height: 100%;
+        width: 100%;
+        border: 0.1vh solid black;
+        border-radius: 2vw;
+    }
+
+.send-message button {
+    height: 100%;
+    width: 10%;
+    color: red;
+}
+
+.message {
+    height: fit-content;
+    width: 100%;
+    background-color: crimson;
+    padding: 1% 0 !important;
+    display: flex;
+}
+
+.pfp {
+    margin: 0 1vw !important;
+    width: 3vw;
+    height: 3vw;
+    border: 0.1vh solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+.message-details {
+    height: 3vw;
+    width: 100%;
+    background-color: gold;
+    display: flex;
+}
+
+.content {
+    width: calc(100% - 10vw);
+    height: fit-content;
+}
+
+    .content h1 {
+        height: 2vw;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.5vw;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .content p {
+        font-size: 1vw;
+    } */
+.error {
+    position: absolute;
+    top: 100%;
+    color: rgb(230, 49, 17);
+    font-size: calc(0.4vh + 0.4vw);
+    translate: calc(0.8vh + 0.8vw);
+    overflow: visible;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+    .error img {
+        position: absolute;
+        right: calc(100% + (0.250vh + 0.250vw));
+        width: calc(0.4vh + 0.4vw);
+    }
+@media screen and (min-width: 768px) {
+    main {
+    }
+
+    .input-box strong {
+        padding-right: 5vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .input-box input {
+        width: 100% !important;
+    }
+
+    .dob strong {
+        padding-right: 10vw !important;
+        font-size: 1.7vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+        font-weight: 400;
+    }
+
+    .nb-dropdown-menu input {
+        font-size: 1.2vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (min-width: 1024px) {
+    main {
+        background-color: white;
+    }
+
+    .date-of-birth {
+        font-size: 1.4vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1.5vw !important;
+        padding-right: 7vw !important;
+    }
+
+    .input strong {
+        font-size: 1.5vw !important;
+    }
+
+    .dob strong {
+        padding-right: 12vw !important;
+        font-size: 1.5vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+@media screen and (min-width: 1440px) {
+    main {
+        background-color: white;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 0.9vw;
+    }
+
+    .how-you-heard i {
+        font-size: 1vw;
+    }
+
+    .date-of-birth {
+        font-size: 0.9vw !important;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+        padding-right: 10vw !important;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+
+    .safe {
+        font-size: 0.8vw;
+    }
+}
+@media screen and (min-width: 1920px) {
+    main {
+        background-color: white;
+    }
+
+    .input-box strong {
+        font-size: 1vw !important;
+    }
+
+    .nb-dropdown-menu option {
+        font-size: 1vw;
+    }
+
+    .input strong {
+        font-size: 1vw !important;
+    }
+
+    .dob strong {
+        padding-right: 13vw !important;
+        font-size: 1vw !important;
+    }
+
+    .dob input {
+        width: 100% !important;
+    }
+}
+
+@keyframes showUp {
+    0% {
+        translate: 0 -100%;
+        opacity: 0;
+    }
+}
